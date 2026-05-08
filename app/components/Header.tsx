@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { href: "#cursos-destacados", label: "Cursos" },
-  { href: "#productos", label: "Productos" },
-  { href: "#rituales", label: "Rituales" },
-  { href: "#nosotras", label: "Sobre nosotras" },
+  { href: "/novedades", label: "Novedades" },
+  { href: "/#cursos-destacados", label: "Cursos" },
+  { href: "/tienda", label: "Tienda" },
+  { href: "/rituales", label: "Rituales" },
+  { href: "/galeria", label: "Galería" },
+  { href: "/#nosotras", label: "Nosotras" },
 ];
 
 export default function Header() {
@@ -51,34 +53,21 @@ export default function Header() {
         }}
       >
         {/* ── Logo ─────────────────────────────────── */}
-        <Link
-          href="/"
-          style={{ textDecoration: "none", display: "flex", flexDirection: "column", lineHeight: 1 }}
-        >
-          <span
-            style={{
-              color: "var(--color-gold)",
-              fontSize: "0.6rem",
-              letterSpacing: "0.35em",
-              textTransform: "uppercase",
-              fontFamily: "var(--font-outfit, sans-serif)",
-              fontWeight: 300,
-              marginBottom: "2px",
-            }}
-          >
-            ☽ &nbsp; Academia Mística
-          </span>
-          <span
-            style={{
-              color: "var(--color-cream)",
-              fontSize: "1.25rem",
-              fontFamily: "var(--font-cormorant, Georgia, serif)",
-              fontWeight: 500,
-              letterSpacing: "0.05em",
-            }}
-          >
-            Brujas Morenas
-          </span>
+        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
+          {/* Desktop: logotipo completo SVG */}
+          <img
+            src="/logito2%20brujas%20morenas.svg"
+            alt="Brujas Morenas"
+            className="logo-desktop"
+            style={{ height: "44px", width: "auto" }}
+          />
+          {/* Mobile: logo cuadrado */}
+          <img
+            src="/logocuadrado.png"
+            alt="Brujas Morenas"
+            className="logo-mobile"
+            style={{ height: "38px", width: "auto" }}
+          />
         </Link>
 
         {/* ── Desktop Nav ───────────────────────────── */}
@@ -235,10 +224,14 @@ export default function Header() {
         @media (min-width: 768px) {
           .hidden-mobile { display: flex !important; }
           .show-mobile   { display: none  !important; }
+          .logo-desktop  { display: block !important; }
+          .logo-mobile   { display: none  !important; }
         }
         @media (max-width: 767px) {
           .hidden-mobile { display: none  !important; }
           .show-mobile   { display: flex  !important; }
+          .logo-desktop  { display: none  !important; }
+          .logo-mobile   { display: block !important; }
         }
       `}</style>
     </header>

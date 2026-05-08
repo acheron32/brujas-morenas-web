@@ -1,6 +1,18 @@
 import Link from "next/link";
 
-export default function Hero() {
+interface HeroProps {
+  heroImage?: string;
+  heroText?: string;
+}
+
+const DEFAULT_IMG =
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80";
+const DEFAULT_TEXT =
+  "Un espacio donde la magia ancestral se encuentra con el conocimiento moderno. Aprende, practica y transforma.";
+
+export default function Hero({ heroImage, heroText }: HeroProps) {
+  const bgImage = heroImage || DEFAULT_IMG;
+  const subtitle = heroText || DEFAULT_TEXT;
   return (
     <section
       style={{
@@ -21,7 +33,7 @@ export default function Hero() {
         }}
       >
         <img
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80"
+         src={bgImage}
           alt=""
           aria-hidden="true"
           style={{
@@ -225,8 +237,7 @@ export default function Hero() {
             fontFamily: "var(--font-outfit, sans-serif)",
           }}
         >
-          Un espacio donde la magia ancestral se encuentra con el conocimiento
-          moderno. Aprende, practica y transforma.
+          {subtitle}
         </p>
 
         {/* CTAs */}

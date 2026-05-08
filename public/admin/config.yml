@@ -6,15 +6,127 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  # ─────────────────────────────────────────
+  # CURSOS
+  # ─────────────────────────────────────────
   - name: "cursos"
-    label: "Cursos"
+    label: "📚 Cursos"
     folder: "content/cursos"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
-      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Descripción corta", name: "descripcion", widget: "text" }
       - { label: "Fecha", name: "fecha", widget: "datetime" }
-      - { label: "Precio", name: "precio", widget: "number" }
-      - { label: "Imagen", name: "imagen", widget: "image" }
-      - { label: "Destacado", name: "destacado", widget: "boolean", default: false }
+      - { label: "Precio (MXN)", name: "precio", widget: "number", default: 0 }
+      - { label: "URL de imagen (Cloudinary)", name: "imagen", widget: "string", hint: "Pega aquí la URL de Cloudinary o cualquier imagen externa" }
+      - { label: "Destacado en inicio", name: "destacado", widget: "boolean", default: false }
+      - { label: "Contenido", name: "body", widget: "markdown", required: false }
+
+  # ─────────────────────────────────────────
+  # PRODUCTOS / TIENDA
+  # ─────────────────────────────────────────
+  - name: "productos"
+    label: "🛍️ Productos (Tienda)"
+    folder: "content/productos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del producto", name: "nombre", widget: "string" }
+      - { label: "Descripción corta", name: "descripcion", widget: "text" }
+      - { label: "Precio (MXN)", name: "precio", widget: "number", default: 0 }
+      - { label: "URL de imagen principal (Cloudinary)", name: "imagen", widget: "string", hint: "URL de Cloudinary" }
+      - label: "Galería de imágenes (URLs)"
+        name: "galeria"
+        widget: "list"
+        required: false
+        hint: "Agrega URLs de Cloudinary, una por línea"
+      - { label: "Categoría", name: "categoria", widget: "string", required: false, hint: "Ej: Cristales, Velas, Hierbas, Talismanes" }
+      - { label: "Disponible", name: "disponible", widget: "boolean", default: true }
+      - { label: "Número de WhatsApp para pedidos", name: "whatsapp", widget: "string", required: false, hint: "Formato: 521XXXXXXXXXX (incluye código de país, sin + ni espacios)" }
+      - { label: "Descripción larga", name: "body", widget: "markdown", required: false }
+
+  # ─────────────────────────────────────────
+  # RITUALES
+  # ─────────────────────────────────────────
+  - name: "rituales"
+    label: "🌙 Rituales"
+    folder: "content/rituales"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del ritual", name: "nombre", widget: "string" }
+      - { label: "Descripción corta", name: "descripcion", widget: "text" }
+      - { label: "URL de imagen principal (Cloudinary)", name: "imagen", widget: "string", hint: "URL de Cloudinary" }
+      - label: "Galería de imágenes (URLs)"
+        name: "galeria"
+        widget: "list"
+        required: false
+        hint: "Agrega URLs de Cloudinary, una por línea"
+      - { label: "Duración", name: "duracion", widget: "string", required: false, hint: "Ej: 30 min, 1 hora" }
+      - { label: "Nivel", name: "nivel", widget: "select", options: ["Principiante", "Intermedio", "Avanzado", "Todos los niveles"], required: false }
+      - label: "Materiales necesarios"
+        name: "materiales"
+        widget: "list"
+        required: false
+        hint: "Un material por línea (ej: 1 vela blanca, sal marina)"
+      - label: "Pasos del ritual"
+        name: "pasos"
+        widget: "list"
+        required: false
+        hint: "Un paso por línea, en orden de ejecución"
+      - { label: "Destacado en inicio", name: "destacado", widget: "boolean", default: false }
+      - { label: "Contenido adicional", name: "body", widget: "markdown", required: false }
+
+  # ─────────────────────────────────────────
+  # NOVEDADES / NOTICIAS
+  # ─────────────────────────────────────────
+  - name: "novedades"
+    label: "📰 Novedades"
+    folder: "content/novedades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Extracto (máx. 150 caracteres)", name: "extracto", widget: "text", required: false, hint: "Resumen breve que se muestra en las tarjetas" }
+      - { label: "URL de imagen (Cloudinary)", name: "imagen", widget: "string", required: false, hint: "URL de imagen de portada" }
+      - { label: "Fecha de publicación", name: "fecha", widget: "datetime" }
+      - { label: "Destacada en inicio", name: "destacado", widget: "boolean", default: false, hint: "Si está activo, aparece en la sección de novedades de la portada" }
+      - { label: "Contenido del artículo", name: "body", widget: "markdown" }
+
+  # ─────────────────────────────────────────
+  # GALERÍA
+  # ─────────────────────────────────────────
+  - name: "galeria"
+    label: "🖼️ Galería"
+    folder: "content/galeria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título / descripción", name: "titulo", widget: "string", required: false }
+      - { label: "URL de imagen (Cloudinary)", name: "imagen", widget: "string", hint: "URL de Cloudinary" }
+      - { label: "Categoría", name: "categoria", widget: "string", required: false, hint: "Ej: Comunidad, Ritual, Evento, Taller" }
+      - { label: "Fecha", name: "fecha", widget: "datetime" }
+
+  # ─────────────────────────────────────────
+  # CONFIGURACIÓN DEL SITIO (archivo único)
+  # ─────────────────────────────────────────
+  - name: "configuracion"
+    label: "⚙️ Configuración del Sitio"
+    files:
+      - name: "settings"
+        label: "Ajustes Generales"
+        file: "content/configuracion/settings.md"
+        fields:
+          - { label: "Imagen de fondo del Hero (URL)", name: "imagen_fondo_hero", widget: "string", hint: "URL de Cloudinary para la imagen principal de la portada" }
+          - { label: "Texto del Hero (subtítulo)", name: "texto_hero", widget: "text", hint: "Frase que aparece bajo el título 'Brujas Morenas' en la portada" }
+          - label: "Redes Sociales y Contacto"
+            name: "redes"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (número sin + ni espacios)", name: "whatsapp", widget: "string", required: false, hint: "Ej: 5219991234567" }
+              - { label: "Instagram (URL completa)", name: "instagram", widget: "string", required: false }
+              - { label: "Facebook (URL completa)", name: "facebook", widget: "string", required: false }
+              - { label: "TikTok (URL completa)", name: "tiktok", widget: "string", required: false }
+              - { label: "YouTube (URL completa)", name: "youtube", widget: "string", required: false }
+              - { label: "Patreon (URL completa)", name: "patreon", widget: "string", required: false }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Outfit } from "next/font/google";
 import "./globals.css";
+import { getSiteConfig } from "../lib/configuracion";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -30,6 +32,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const config = getSiteConfig();
+
   return (
     <html
       lang="es"
@@ -37,6 +41,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen antialiased">
         {children}
+        <WhatsAppButton phone={config.redes.whatsapp} />
 
         <script
           dangerouslySetInnerHTML={{
