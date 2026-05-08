@@ -2,8 +2,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllCursos, getCursoBySlug } from '../../../lib/cursos';
 
-export const dynamic = 'force-dynamic';
-
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
