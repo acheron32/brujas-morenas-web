@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { getAllCursos, getCursosDestacados } from '../lib/cursos';
 
-export const dynamic = 'force-dynamic';
-
 export default function Home() {
   const cursos = getAllCursos();
   const cursosDestacados = getCursosDestacados();
