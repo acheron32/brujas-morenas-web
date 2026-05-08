@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { href: "/novedades", label: "Novedades" },
-  { href: "/#cursos-destacados", label: "Cursos" },
+  { href: "/cursos", label: "Cursos" },
   { href: "/tienda", label: "Tienda" },
   { href: "/rituales", label: "Rituales" },
   { href: "/galeria", label: "Galería" },
@@ -105,7 +105,7 @@ export default function Header() {
 
         {/* ── Desktop CTA ───────────────────────────── */}
         <Link
-          href="#cursos-destacados"
+          href="/cursos"
           style={{
             background: "var(--color-gold)",
             color: "#0d0b0e",
@@ -200,7 +200,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="#cursos-destacados"
+            href="/cursos"
             onClick={closeMenu}
             style={{
               background: "var(--color-gold)",

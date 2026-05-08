@@ -57,7 +57,7 @@ export default function CursosDestacados({ cursos }: Props) {
           </div>
 
           <Link
-            href="#todos-los-cursos"
+            href="/cursos"
             className="dest-ver-todos"
           >
             Ver todos los cursos →
