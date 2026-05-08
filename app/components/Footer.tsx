@@ -45,7 +45,7 @@ export default function Footer() {
                   marginBottom: "4px",
                 }}
               >
-                ☽ Academia Mística
+                ☽ De Villa en Villa, sin Dios ni Santa María
               </span>
               <span
                 style={{

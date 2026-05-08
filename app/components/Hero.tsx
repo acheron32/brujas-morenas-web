@@ -8,7 +8,7 @@ interface HeroProps {
 const DEFAULT_IMG =
   "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80";
 const DEFAULT_TEXT =
-  "Un espacio donde la magia ancestral se encuentra con el conocimiento moderno. Aprende, practica y transforma.";
+  "Brujas Morenas es una comunidad de brujas y brujos practicantes de Magia Morena.";
 
 export default function Hero({ heroImage, heroText }: HeroProps) {
   const bgImage = heroImage || DEFAULT_IMG;
@@ -142,7 +142,7 @@ export default function Hero({ heroImage, heroText }: HeroProps) {
               fontFamily: "var(--font-outfit, sans-serif)",
             }}
           >
-            Academia Mística
+            De Villa en Villa, sin Dios ni Santa María
           </span>
           <span
             style={{
