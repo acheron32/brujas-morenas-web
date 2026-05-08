@@ -1,7 +1,7 @@
 ---
 titulo: "Bienvenidas a Brujas Morenas"
 extracto: "Abrimos este espacio para todas las brujas que buscan aprender, crecer y conectar con su magia interior."
-imagen: "https://images.unsplash.com/photo-1518531933037-91b19f58c2c1?w=800&q=80"
+imagen: "https://res.cloudinary.com/difcpy0j1/image/upload/v1778279497/brujas-morenas/uploads/bienvenida-brujas-morenas.jpg"
 fecha: "2026-05-01"
 destacado: true
 ---
