@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/0e3h3uuir1nia.css","style"]
+:HL["https://images.unsplash.com/photo-1518531933037-91b19f58c2c1?w=800","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"FQ-j5GoT6c5NEFEw9M67Y"}
