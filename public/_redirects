@@ -1,0 +1,15 @@
+# Mazos Online - Servir archivos HTML estáticos
+/mazos-online/cartas/01-10.html  /mazos-online/cartas/01-10.html  200
+/mazos-online/cartas/11-20.html  /mazos-online/cartas/11-20.html  200
+/mazos-online/cartas/21-30.html  /mazos-online/cartas/21-30.html  200
+/mazos-online/cartas/31-40.html  /mazos-online/cartas/31-40.html  200
+/mazos-online/cartas/41-50.html  /mazos-online/cartas/41-50.html  200
+/mazos-online/cartas/51-61.html  /mazos-online/cartas/51-61.html  200
+
+# Redirigir /mazos-online/cartas/01-10 → /mazos-online/cartas/01-10.html
+/mazos-online/cartas/01-10     /mazos-online/cartas/01-10.html  200
+/mazos-online/cartas/11-20     /mazos-online/cartas/11-20.html  200
+/mazos-online/cartas/21-30     /mazos-online/cartas/21-30.html  200
+/mazos-online/cartas/31-40     /mazos-online/cartas/31-40.html  200
+/mazos-online/cartas/41-50     /mazos-online/cartas/41-50.html  200
+/mazos-online/cartas/51-61     /mazos-online/cartas/51-61.html  200
