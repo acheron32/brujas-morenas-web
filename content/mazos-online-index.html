@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔮 Nuestros Mazos Online — Brujas Morenas</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a0f0f 100%);
+      color: #e8c56d;
+      font-family: 'Georgia', serif;
+    }
+    
+    .mazos-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    
+    .mazos-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .mazos-header h1 {
+      font-size: 3rem;
+      color: #c0392b;
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+    }
+    
+    .mazos-header p {
+      font-size: 1.2rem;
+      color: #8b7355;
+      font-style: italic;
+    }
+    
+    .mazos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .mazo-card {
+      background: rgba(13, 61, 74, 0.2);
+      border: 1px solid rgba(139, 26, 14, 0.3);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .mazo-card:hover {
+      border-color: rgba(139, 26, 14, 0.6);
+      box-shadow: 0 8px 24px rgba(192, 57, 43, 0.2);
+      transform: translateY(-4px);
+    }
+    
+    .mazo-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .mazo-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .mazo-card-content {
+      padding: 1.5rem;
+    }
+    
+    .mazo-card h3 {
+      font-size: 1.5rem;
+      color: #e8c56d;
+      margin-bottom: 0.5rem;
+    }
+    
+    .mazo-card p {
+      font-size: 0.95rem;
+      color: #b8936d;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .badge {
+      display: inline-block;
+      background: rgba(192, 57, 43, 0.2);
+      border: 1px solid rgba(192, 57, 43, 0.4);
+      color: #c0392b;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-family: monospace;
+      letter-spacing: 0.05em;
+    }
+    
+    .coming-soon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(13, 61, 74, 0.1);
+      border-color: rgba(139, 26, 14, 0.15);
+      min-height: 400px;
+    }
+    
+    .coming-soon div {
+      text-align: center;
+    }
+    
+    .coming-soon p {
+      font-size: 0.9rem;
+      color: #8b7355;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+    
+    .coming-soon h3 {
+      font-size: 2rem;
+      color: #8b1a0e;
+      opacity: 0.6;
+    }
+    
+    .mazos-footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(139, 26, 14, 0.2);
+      color: #8b7355;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="mazos-container">
+    
+    <div class="mazos-header">
+      <h1>🔮 Nuestros Mazos Online</h1>
+      <p>Explora nuestros oráculos en línea. Gratis para todos.</p>
+    </div>
+    
+    <div class="mazos-grid">
+      
+      <!-- MAZO 1: AGUA QUEMADA -->
+      <div class="mazo-card">
+        <a href="./mazos-online/">
+          <img src="https://res.cloudinary.com/difcpy0j1/image/upload/brujas-morenas/oraculo-agua-quemada/01-tezcaltlipoca.png" alt="Oráculo Agua Quemada">
+          <div class="mazo-card-content">
+            <h3>Oráculo Agua Quemada</h3>
+            <p>61 cartas con deidades mexicas ancestrales y elementos sagrados</p>
+            <span class="badge">Edición Limitada (500)</span>
+          </div>
+        </a>
+      </div>
+      
+      <!-- MAZO 2: PROXIMAMENTE -->
+      <div class="mazo-card coming-soon">
+        <div>
+          <p>Próximo Mazo</p>
+          <h3>Muy Pronto...</h3>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="mazos-footer">
+      <p>Los mazos online son un regalo para nuestra comunidad. Disfrútalos y déjate inspirar.</p>
+    </div>
+    
+  </div>
+</body>
+</html>
