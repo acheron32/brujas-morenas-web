@@ -6,7 +6,7 @@ imagen: "https://res.cloudinary.com/difcpy0j1/image/upload/v1778290526/brujas-mo
 galeria: []
 categoria: "Libros"
 disponible: true
-whatsapp: "5272980543500"
+whatsapp: "527298054350"
 ---
 
 ## Grimorio de las Brujas Morenas ♥️

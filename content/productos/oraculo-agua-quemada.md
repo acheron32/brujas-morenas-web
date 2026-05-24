@@ -6,7 +6,7 @@ imagen: "https://res.cloudinary.com/difcpy0j1/image/upload/v1778290329/brujas-mo
 galeria: []
 categoria: "Oráculos"
 disponible: true
-whatsapp: "5272980543500"
+whatsapp: "527298054350"
 ---
 
 ## Oráculo Agua Quemada — Atl Tlachinolli ✨

@@ -6,7 +6,7 @@ imagen: "https://res.cloudinary.com/difcpy0j1/image/upload/v1778290682/brujas-mo
 galeria: []
 categoria: "Tarots"
 disponible: true
-whatsapp: "5272980543500"
+whatsapp: "527298054350"
 ---
 
 ## Tarot Canela de Brujas Morenas 🌻
