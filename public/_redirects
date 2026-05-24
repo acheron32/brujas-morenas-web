@@ -13,3 +13,6 @@
 /mazos-online/cartas/31-40     /mazos-online/cartas/31-40.html  200
 /mazos-online/cartas/41-50     /mazos-online/cartas/41-50.html  200
 /mazos-online/cartas/51-61     /mazos-online/cartas/51-61.html  200
+
+# Redirigir /mazos-online/cartas/ al index
+/mazos-online/cartas/          /mazos-online/  301
