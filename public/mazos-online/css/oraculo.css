@@ -1,0 +1,456 @@
+/* ===================================================
+   ORÁCULO AGUA QUEMADA DE BRUJAS MORENAS
+   Estilos compartidos — Paola Klug
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+/* ---- RESET Y BASE ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --negro:        #0a0705;
+  --carbon:       #1a100a;
+  --obsidiana:    #14080e;
+  --rojo-fuego:   #8b1a0e;
+  --rojo-brasa:   #c0392b;
+  --rojo-sangre:  #6b0f1a;
+  --dorado:       #c9973a;
+  --dorado-claro: #e8c56d;
+  --dorado-suave: #f5dfa0;
+  --turquesa:     #1a5f6b;
+  --agua:         #0d3d4a;
+  --jade:         #2e6b50;
+  --blanco:       #f0e8d8;
+  --crema:        #f7f0e0;
+  --gris-humo:    #c8bfb0;
+  --font-titulo:  'Cinzel Decorative', serif;
+  --font-subtit:  'Cinzel', serif;
+  --font-cuerpo:  'Cormorant Garamond', serif;
+  --font-italic:  'IM Fell English', serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--negro);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(139,26,14,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(13,61,74,0.15) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='1' fill='rgba(201,151,58,0.04)'/%3E%3Cline x1='0' y1='0' x2='80' y2='80' stroke='rgba(201,151,58,0.02)' stroke-width='0.5'/%3E%3C/svg%3E");
+  color: var(--crema);
+  font-family: var(--font-cuerpo);
+  font-size: 17px;
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+/* ---- CONTENEDOR GENERAL ---- */
+.libro-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ---- SEPARADORES DECORATIVOS ---- */
+.separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+}
+.separador::before,
+.separador::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dorado), transparent);
+}
+.separador span {
+  color: var(--dorado);
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
+  font-family: var(--font-subtit);
+}
+
+.linea-dorada {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dorado) 30%, var(--dorado-claro) 50%, var(--dorado) 70%, transparent);
+  margin: 2rem 0;
+}
+
+/* ---- PORTADA ---- */
+.portada {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portada::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(201,151,58,0.15);
+  border-radius: 2px;
+  margin: 2rem;
+  pointer-events: none;
+}
+.portada-imagen {
+  width: min(340px, 80%);
+  border: 2px solid var(--dorado);
+  box-shadow: 0 0 40px rgba(139,26,14,0.5), 0 0 80px rgba(0,0,0,0.8);
+  margin-bottom: 2.5rem;
+  border-radius: 4px;
+}
+.portada-titulo {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  color: var(--dorado-claro);
+  text-shadow: 0 0 30px rgba(201,151,58,0.6), 2px 2px 8px rgba(0,0,0,0.9);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.portada-subtitulo {
+  font-family: var(--font-subtit);
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  color: var(--dorado);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.portada-autora {
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--gris-humo);
+  margin-top: 2rem;
+  letter-spacing: 0.1em;
+}
+
+/* ---- GLIFO DECORATIVO ---- */
+.glifo-central {
+  font-size: 3rem;
+  color: var(--dorado);
+  opacity: 0.7;
+  margin: 1.5rem 0;
+  display: block;
+  text-align: center;
+  filter: drop-shadow(0 0 12px rgba(201,151,58,0.5));
+}
+
+/* ---- SECCIONES DE TEXTO INTRODUCTORIO ---- */
+.seccion-intro {
+  background: linear-gradient(135deg, rgba(26,16,10,0.95), rgba(20,8,14,0.95));
+  border: 1px solid rgba(201,151,58,0.2);
+  border-radius: 4px;
+  padding: 3rem 3.5rem;
+  margin: 2rem 0;
+  position: relative;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.4);
+}
+.seccion-intro::before {
+  content: '';
+  position: absolute;
+  top: 12px; left: 12px; right: 12px; bottom: 12px;
+  border: 1px solid rgba(201,151,58,0.08);
+  border-radius: 2px;
+  pointer-events: none;
+}
+.seccion-titulo {
+  font-family: var(--font-subtit);
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.seccion-intro p {
+  color: var(--crema);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  hyphens: auto;
+}
+.seccion-intro p:last-child { margin-bottom: 0; }
+
+/* ---- CITA DESTACADA ---- */
+.cita-destacada {
+  border-left: 3px solid var(--dorado);
+  padding: 1.2rem 2rem;
+  margin: 2rem 0;
+  background: rgba(201,151,58,0.05);
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--dorado-suave);
+  line-height: 1.7;
+}
+
+/* ---- RECOMENDACIONES ---- */
+.recomendaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.recomendacion-item {
+  background: rgba(201,151,58,0.06);
+  border: 1px solid rgba(201,151,58,0.15);
+  padding: 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+.recomendacion-item .recom-icono {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+}
+.recomendacion-item p {
+  font-size: 0.95rem;
+  color: var(--gris-humo);
+  line-height: 1.6;
+}
+
+/* ---- CARTA ---- */
+.carta-pagina {
+  page-break-before: always;
+  margin: 0;
+  padding: 3rem 0 1rem;
+  border-bottom: 1px solid rgba(201,151,58,0.1);
+}
+.carta-pagina:first-child { page-break-before: auto; }
+
+.carta-numero-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.carta-numero {
+  font-family: var(--font-titulo);
+  font-size: 2.5rem;
+  color: var(--rojo-brasa);
+  line-height: 1;
+  min-width: 3rem;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(192,57,43,0.4);
+}
+.carta-titulo-bloque h2 {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--dorado-claro);
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-shadow: 0 0 20px rgba(201,151,58,0.3);
+}
+.carta-titulo-bloque .carta-epiteto {
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gris-humo);
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+}
+
+/* Layout imagen + texto */
+.carta-layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+@media (max-width: 680px) {
+  .carta-layout { grid-template-columns: 1fr; }
+  .carta-imagen-contenedor { text-align: center; }
+}
+
+.carta-imagen-contenedor {
+  position: sticky;
+  top: 2rem;
+}
+.carta-imagen {
+  width: 100%;
+  max-width: 280px;
+  border: 2px solid var(--dorado);
+  box-shadow:
+    0 0 0 6px rgba(201,151,58,0.08),
+    0 8px 32px rgba(0,0,0,0.7),
+    0 0 60px rgba(139,26,14,0.3);
+  border-radius: 3px;
+  display: block;
+}
+.carta-imagen-pie {
+  font-family: var(--font-subtit);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+/* Cuerpo de la carta */
+.carta-cuerpo {
+  color: var(--crema);
+}
+.carta-descripcion {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+  text-align: justify;
+  hyphens: auto;
+  border-left: 2px solid rgba(201,151,58,0.3);
+  padding-left: 1.2rem;
+}
+
+.carta-bloque {
+  background: rgba(20,8,14,0.6);
+  border: 1px solid rgba(201,151,58,0.12);
+  padding: 1.5rem 1.8rem;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+.carta-bloque-titulo {
+  font-family: var(--font-subtit);
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.carta-bloque-titulo::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201,151,58,0.4), transparent);
+}
+.carta-bloque p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gris-humo);
+}
+
+/* Rituales tag list */
+.rituales-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.ritual-tag {
+  font-family: var(--font-subtit);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rojo-brasa);
+  border: 1px solid rgba(192,57,43,0.4);
+  padding: 0.25rem 0.8rem;
+  border-radius: 2px;
+  background: rgba(139,26,14,0.1);
+}
+
+/* Expansión de la carta */
+.carta-expansion {
+  margin-top: 1.5rem;
+}
+.carta-expansion .expansion-parrafo {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--crema);
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  hyphens: auto;
+}
+.expansion-cita {
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--dorado-suave);
+  border-left: 2px solid var(--rojo-sangre);
+  padding-left: 1.2rem;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+/* Símbolo de fin de carta */
+.carta-fin {
+  text-align: center;
+  color: var(--dorado);
+  opacity: 0.4;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.5em;
+}
+
+/* ---- ÍNDICE / NAVEGACIÓN ---- */
+.indice-contenedor {
+  background: linear-gradient(135deg, rgba(26,16,10,0.95), rgba(20,8,14,0.95));
+  border: 1px solid rgba(201,151,58,0.2);
+  padding: 2.5rem 3rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+.indice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.5rem 2rem;
+  margin-top: 1.5rem;
+}
+.indice-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dotted rgba(201,151,58,0.12);
+  text-decoration: none;
+  color: var(--crema);
+  transition: color 0.2s;
+}
+.indice-item:hover { color: var(--dorado-claro); }
+.indice-num {
+  font-family: var(--font-subtit);
+  font-size: 0.75rem;
+  color: var(--rojo-brasa);
+  min-width: 2rem;
+  text-align: right;
+}
+.indice-nombre {
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+}
+
+/* ---- COLOFÓN ---- */
+.colofonpagina {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(201,151,58,0.2);
+  margin-top: 4rem;
+}
+.colofonpagina p {
+  font-size: 0.9rem;
+  color: var(--gris-humo);
+  line-height: 2;
+}
+
+/* ---- PRINT / PDF ---- */
+@media print {
+  body { background: #0a0705 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .carta-imagen-contenedor { position: static; }
+  .carta-pagina { page-break-before: always; page-break-inside: avoid; }
+  a { text-decoration: none; color: inherit; }
+}
