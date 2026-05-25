@@ -58,14 +58,14 @@ export default function Header() {
             src="/logito2%20brujas%20morenas.svg"
             alt="Brujas Morenas"
             className="logo-desktop"
-            style={{ height: "44px", width: "auto" }}
+            style={{ height: "44px", width: "auto", filter: "brightness(1.3) saturate(1.2) hue-rotate(-15deg)" }}
           />
           {/* Mobile: logo cuadrado */}
           <img
             src="/logocuadrado.png"
             alt="Brujas Morenas"
             className="logo-mobile"
-            style={{ height: "38px", width: "auto" }}
+            style={{ height: "38px", width: "auto", filter: "brightness(1.3) saturate(1.2) hue-rotate(-15deg)" }}
           />
         </Link>
 
