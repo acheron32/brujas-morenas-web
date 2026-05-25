@@ -3,7 +3,6 @@ import Link from "next/link";
 const NAV = [
   { href: "#cursos-destacados", label: "Cursos" },
   { href: "#productos", label: "Productos" },
-  { href: "#rituales", label: "Rituales" },
   { href: "#nosotras", label: "Sobre nosotras" },
 ];
 
@@ -67,8 +66,7 @@ export default function Footer() {
                 maxWidth: "240px",
               }}
             >
-              Academia de magia ancestral y conocimiento espiritual para las
-              brujas del siglo XXI.
+              Un espacio donde la magia ancestral se encuentra con el mundo moderno.
             </p>
           </div>
 
@@ -127,10 +125,10 @@ export default function Footer() {
               }}
             >
               <a
-                href="mailto:hola@brujasmorenas.com"
+                href="mailto:brujas.morenas@gmail.com"
                 className="footer-nav-link"
               >
-                hola@brujasmorenas.com
+                brujas.morenas@gmail.com
               </a>
               <div
                 style={{
