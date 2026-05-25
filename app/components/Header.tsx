@@ -7,9 +7,7 @@ const NAV_LINKS = [
   { href: "/novedades", label: "Novedades" },
   { href: "/cursos", label: "Cursos" },
   { href: "/tienda", label: "Tienda" },
-  { href: "/rituales", label: "Rituales" },
   { href: "/mazos-online", label: "🔮 Mazos Online" },
-  { href: "/galeria", label: "Galería" },
   { href: "/#nosotras", label: "Nosotras" },
 ];
 
