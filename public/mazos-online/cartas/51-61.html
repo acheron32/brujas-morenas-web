@@ -40,7 +40,37 @@
     }
   </style>
 </head>
-<body>
+<body><!-- ═══════════════════════════════════════════ HEADER ═══════════════════════════════════════════ -->
+<header style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(13,11,14,0.95), rgba(13,11,14,0.85));
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,151,58,0.15);
+  padding: 1rem 1.5rem;
+">
+  <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+    <!-- Logo -->
+    <a href="/" style="text-decoration: none; display: flex; align-items: center;">
+      <img src="/logito2%20brujas%20morenas.svg" alt="Brujas Morenas" style="height: 44px; width: auto;">
+    </a>
+    
+    <!-- Nav -->
+    <nav style="display: flex; gap: 2.5rem; align-items: center;">
+      <a href="/" style="color: #e8c56d; text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 300;">INICIO</a>
+      <a href="/mazos-online/" style="color: #e8c56d; text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 300;">🔮 MAZOS ONLINE</a>
+      <a href="/cursos" style="color: #e8c56d; text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 300;">CURSOS</a>
+      <a href="/tienda" style="color: #e8c56d; text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 300;">TIENDA</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Espaciador para compensar fixed header -->
+<div style="height: 80px;"></div>
+
 <div class="libro-contenedor">
 
   <nav class="nav-superior">
