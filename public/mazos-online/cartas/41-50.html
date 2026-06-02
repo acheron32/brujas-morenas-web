@@ -36,7 +36,33 @@
       font-family: var(--font-cuerpo); font-size: 1.1rem;
       color: var(--gris-humo); max-width: 600px; margin: 0 auto; line-height: 1.85;
     }
-  </style>
+  
+    @media (max-width: 768px) {
+      nav { 
+        gap: 0.5rem !important;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        font-size: 0.65rem !important;
+        padding: 0.4rem 0.8rem !important;
+      }
+      nav a[style*="background"] {
+        padding: 0.4rem 0.6rem !important;
+        font-size: 0.65rem !important;
+        margin: 0 0.2rem !important;
+      }
+    }
+    @media (max-width: 500px) {
+      nav a {
+        font-size: 0.6rem !important;
+      }
+      nav a[style*="background"] {
+        padding: 0.3rem 0.5rem !important;
+        font-size: 0.6rem !important;
+      }
+    }
+</style>
 </head>
 <body><!-- ═══════════════════════════════════════════ HEADER ═══════════════════════════════════════════ -->
 <header style="
@@ -57,7 +83,7 @@
     </a>
     
     <!-- Nav -->
-    <nav style="display: flex; gap: 2.5rem; align-items: center;">
+    <nav style="display: flex; gap: 2.5rem; align-items: center; flex-wrap: wrap; justify-content: center;">
       <a href="/" style="color: #e8c56d; text-decoration: none; font-size: 1rem; letter-spacing: 0.08em; font-weight: 300;">INICIO</a>
       <a href="/mazos-online/" style="color: #e8c56d; text-decoration: none; font-size: 1rem; letter-spacing: 0.08em; font-weight: 300;">🔮 MAZOS ONLINE</a>
       <a href="/cursos" style="color: #e8c56d; text-decoration: none; font-size: 1rem; letter-spacing: 0.08em; font-weight: 300;">CURSOS</a>
