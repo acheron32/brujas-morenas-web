@@ -13,7 +13,8 @@ collections:
     label: "📚 Cursos"
     folder: "content/cursos"
     create: true
-    slug: "{{slug}}"
+    identifier_field: titulo
+    slug: "{{titulo}}"
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Descripción corta", name: "descripcion", widget: "text" }
