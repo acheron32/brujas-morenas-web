@@ -1,7 +1,7 @@
 ---
 titulo: Magia de Otoño (Clase Maestra)
 descripcion: >-
-  
+
   ¿Amas el otoño?
 
 

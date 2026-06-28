@@ -1,5 +1,5 @@
 ---
-titulo: "Magia Doméstica "
+titulo: "Magia Doméstica"
 descripcion: >-
   Descubre la magia que habita en tu hogar.
 
