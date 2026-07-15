@@ -1,7 +1,7 @@
 ---
 titulo: Limpia con Plumas (Clase Maestra)
 descripcion: |
-
+  
 
 
   Aprende a limpiar a tu familia con la magia de algunos animales de poder.
@@ -20,7 +20,7 @@ descripcion: |
   Fecha: 21 de agosto
 
   Horario: 6:00 pm (hora de México)
-fecha: 2026-08-21T18:00:00.000-06:00
+fecha: 2026-08-28T18:00:00.000-06:00
 precio: 0
 imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1782675781/1000691908_mfnfjc.png
 destacado: true
