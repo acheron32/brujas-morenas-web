@@ -1,22 +1,31 @@
 ---
-titulo: "Clase Maestra: Aceites Lunares"
+titulo: "Taller: Día de Muertos"
 descripcion: >-
-  Acaba el año aprendiendo a preparar aceites lunares.
+  En este taller conocerás todo lo relacionado con el Día de Muertos.
 
 
-  Herramientas mágicas que concentran la energía y la fuerza de cada luna del año.
+  Veremos:
 
 
-  En esta clase maestra veremos:
+  Celebraciones mexicas
+
+  Celebraciones purépechas
+
+  Celebraciones mayas vinculadas con la muerte
 
 
-  Significado y poder de cada luna
+  Haremos un viaje a los inframundos indígenas y las deidades que los custodian. Conocerás:
 
-  Hierbas y elementos para cada intención
 
-  Cómo preparar, consagrar y activar tu aceite
-fecha: 2026-09-18T18:00:00.000-06:00
-precio: 400
-imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1785423317/1000746715_gx788f.png
+  El verdadero origen del Día de Muertos desde el periodo colonial
+
+  El significado de los elementos del altar
+
+  La fecha de llegada de nuestros difuntos
+
+  Y mucho más
+fecha: 2026-09-05T17:00:00.000-06:00
+precio: 1200
+imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1785423411/1000746706_g2j9y0.png
 destacado: true
 ---
