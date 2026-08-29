@@ -22,16 +22,12 @@ descripcion: >-
 
   El Decálogo de las Brujas
 precio: 650
-imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1785899550/762998567_1424949859688218_6993610387143441474_n_zmn5gk.jpg
+imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1787971680/1000804800_2_fgsk6u.jpg
 disponible: true
 ---
 Este libro representa el origen de Brujas Morenas: los relatos, las enseñanzas y los símbolos que dieron forma a esta comunidad y que nos inspiraron a preservar la Magia Morena y las tradiciones mágicas de México.
 
-**Precio especial de preventa:** $650 MXN
-
-**Envío GRATIS a todo México** (únicamente durante la preventa).
-
-**Disponible a mediados de septiembre.**
+**Precio: $650 pesos más gastos de envío**
 
 **Realiza tu pedido por WhatsApp:** +52 729 805 4350
 
