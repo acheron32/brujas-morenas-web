@@ -1,13 +1,9 @@
 ---
 titulo: Magia de Sangre- La Ruta de las Ánimas
 extracto: >-
-  Preventa exclusiva
+  
+  Costo: $650 pesos más gastos de envío
 
-
-  Costo: $650 pesos
-
-
-  Envío GRATIS a todo México (únicamente durante la preventa). Después, el envío corre por cuenta de cada comprador.
 
 
   350 páginas
@@ -29,7 +25,7 @@ extracto: >-
 
 
   +52 729 805 4350
-imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1784239346/749354987_28005963052355759_5365124244519754143_n_vn0sfv.jpg
+imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1787971770/1000804800_3_petu1c.jpg
 fecha: 2026-07-16T15:00:00.000-06:00
 destacado: true
 ---
