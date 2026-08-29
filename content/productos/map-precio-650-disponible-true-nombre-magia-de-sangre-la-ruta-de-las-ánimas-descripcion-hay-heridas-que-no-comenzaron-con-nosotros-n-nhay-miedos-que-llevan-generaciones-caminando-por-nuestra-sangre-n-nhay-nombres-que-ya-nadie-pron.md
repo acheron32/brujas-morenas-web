@@ -32,21 +32,11 @@ Cada ritual es una conversación con nuestra propia historia.
 
 Cada página es un paso en **La Ruta de las Ánimas**.
 
-**Preventa exclusiva**
-
-**Costo:** $650 pesos
-
-**Envío GRATIS a todo México** (únicamente durante la preventa). Después, el envío corre por cuenta de cada comprador.
+**Costo:** $650 pesos más gastos de envío
 
 **350 páginas**
 
 **Medidas:** 16 × 23 cm
-
-Los envíos comenzarán **a finales de agosto**, justo a tiempo para preparar nuestro corazón, nuestro altar y nuestro hogar antes de la llegada de quienes vuelven a visitarnos en Día de Muertos.
-
-Porque antes de recibir a nuestros muertos…
-
-primero debemos recordar quiénes somos.
 
 **Información y pedidos únicamente por WhatsApp:**
 
