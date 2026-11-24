@@ -22,7 +22,7 @@ destacado: true
 ---
 Una clase dedicada a conocer su fuerza espiritual y aprender a incorporarla en nuestras prácticas mágicas.
 
-Fecha: Viernes 8 de enero de 2027.
+Fecha: Viernes 8 de enero de 2027
 
 Horario: 6:00 p. m., hora de la Ciudad de México.
 
