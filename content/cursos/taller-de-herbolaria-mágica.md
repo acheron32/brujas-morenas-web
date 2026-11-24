@@ -38,7 +38,7 @@ descripcion: >-
 fecha: 2027-01-09T17:00:00.000-06:00
 precio: 1200
 imagen: https://res.cloudinary.com/dcxpekzyi/image/upload/v1795376382/Post_Instagram_Decorativo_floreado_Crema_ozdasj.jpg
-destacado: true
+destacado: false
 ---
 Y muchos conocimientos más que te permitirán descubrir el universo mágico de las plantas y desarrollar una relación más profunda con la naturaleza.
 
